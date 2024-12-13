@@ -10,3 +10,12 @@ case @cupon
 end
 
 print @discont;
+
+declare @v smallint
+set @v = 1
+while @v<2
+	begin
+		set @v=@v+1
+
+		print (@v)
+	end
