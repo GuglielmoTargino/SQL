@@ -1,4 +1,5 @@
-use connec_test
+DECLARE @guga CHAR(5);
 
-select * from ti
+SET @guga = (SELECT nome FROM ti WHERE id = 1);
 
+PRINT @guga;  -- Apenas para verificar o valor atribuído.
