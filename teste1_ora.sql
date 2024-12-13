@@ -1,3 +1,3 @@
-select* from PETS
+select* from PETS;
 
-SELECT * FROM pets where nome='gught'
+SELECT * FROM pets where nome='gught';
