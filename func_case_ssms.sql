@@ -19,3 +19,8 @@ while @v<2
 
 		print (@v)
 	end
+
+	use connec_test
+	create table pet(
+	id tinyint,
+	nome char (10))
