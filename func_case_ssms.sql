@@ -1,26 +1,18 @@
-use connec_test;
-declare @discont real;
-declare @cupon char(10);
 
-set @cupon='v10';
-set @discont=
-case @cupon
-	when 'v25' then 25
-	when 'v10' then 10
-end
 
-print @discont;
 
-declare @v smallint
-set @v = 1
-while @v<2
-	begin
-		set @v=@v+1
+use connec_test
 
-		print (@v)
-	end
+create trigger trg2_pet_insert
 
-	use connec_test
-	create table pet(
-	id tinyint,
-	nome char (10))
+	on pet
+	for insert
+as
+begin
+	print 'NOVO VALOR CADASTRADO!!!!';
+end;
+
+insert into pet (id,nome) values(1,'dara');
+
+
+select * from pet;
