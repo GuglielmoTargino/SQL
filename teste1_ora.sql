@@ -1,3 +1,12 @@
-select* from PETS;
+/*
+Exercicio com procedure
+Aluno: Guglielmo Targino
+Data: 17dez24
+Versão: v0
 
-SELECT * FROM pets where nome='gught';
+*/
+
+begin
+prc_insert(10,'deia');
+
+end;
