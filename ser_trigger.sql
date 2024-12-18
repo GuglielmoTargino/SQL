@@ -5,7 +5,7 @@ Aluno: Guglielmo Targino
 Dara: 17dez24
 versão: v0
 pg 528
-*/
+
 
 
 use connec_test
@@ -24,6 +24,9 @@ begin
 			rollback transaction
 		end;
 end;
+
+
+*/
 
 create trigger trg_pet_insert
 	on pet
