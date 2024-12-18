@@ -12,6 +12,6 @@ use connec_test
 
 insert into pet (id,nome) values(3,'jara')
 
-select * from pet where id=1;
+select * from pet where id=3;
 
-exec proced_mostrar @id=2;
+exec proced_mostrar @id=3;
